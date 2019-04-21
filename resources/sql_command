@@ -1,0 +1,15 @@
+USE stockdata;
+
+CREATE TABLE intraday_candle (
+	id BIGINT not null,
+	symbol varchar not null,
+	open DOUBLE,
+	high DOUBLE,
+	low DOUBLE,
+	close DOUBLE,
+	volume DOUBLE,
+	ticker_time DATE,
+	created_at DATE,
+	updated_at DATE,
+	PRIMARY KEY (ID)	
+);
